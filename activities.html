@@ -51,6 +51,7 @@
         <h1>Activities</h1>
         <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
 
+        <div class="table-responsive">
         <table>
         <caption>Activities at the Cliffs</caption>
         <thead>
@@ -100,15 +101,21 @@
           </tr>
         </tbody>
         </table>
+        </div>
 
-        <!-- Selected Activities -->
-        <div id="displaySelected">
-            <div id="result">
-                <h4>My selected activities to enquire:</h4>
-            </div>
-            <div id="sendinfo">
-                <input type="email" placeholder="johndoe@gmail.com">
-                <button>Get Info</button>
+        <div class="modal fade" id="activityModal" tabindex="-1" aria-labelledby="activityModalTitle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="activityModalTitle">My selected activities to enquire:</h5>
+                    </div>
+                    <div class="modal-body" id="result">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                        <button type="button" class="btn btn-primary">Get Info</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main> <!-- End Main Content -->

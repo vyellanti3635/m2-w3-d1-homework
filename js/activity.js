@@ -22,19 +22,14 @@ $(document).ready(function() {
         $(this).toggleClass("tdhighlight"); //Add or remove class when cell is selected
 
         if ($(this).hasClass("tdhighlight")) { //Check if selected cell has class
-            $("#displaySelected").css("visibility", "visible"); //Make display box visible
-            $("#displaySelected").css("margin-top", "2em"); //Add spaces above display box
             $("#result").append("<p>" + activity + "</p>"); //Add child element with activity and cliff name
 
         } else { //If selected cell don't have class
             $("#result p").filter(function () {
                 return $(this).text() == activity; //Find the child element of this activity
             }).remove(); //Remove child element
-
-            if ($("#result").has("p").length == false) { //Check if there are any child elements within parent
-                $("#displaySelected").css("visibility", "hidden"); //Make display box hidden
-                $("#displaySelected").css("margin-top", "0"); //Remove spaces above display box
-            }
         }
+
+        $("#activityModal").modal("show");
     });
 });

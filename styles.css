@@ -3,21 +3,30 @@ header {
   width: 100%;
   min-height: 275px;
 }
-#home {
-  background: no-repeat white url(images/cliff_ocean.jpg);
-  background-size: 100% 400px;
+body {
+  position: relative;
 }
-#activities {
-  background: no-repeat white url(images/runfly.jpg);
-  background-size: 100% 400px;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+  background: no-repeat center / cover;
 }
-#contact {
-  background: no-repeat white url(images/cliff_rock.jpg);
-  background-size: 100% 400px;
+#home::before {
+  background-image: url(images/cliff_ocean.jpg);
 }
-#cliffs {
-  background: no-repeat white url(images/forest_cliff.jpg);
-  background-size: 100% 400px;
+#activities::before {
+  background-image: url(images/runfly.jpg);
+}
+#contact::before {
+  background-image: url(images/cliff_rock.jpg);
+}
+#cliffs::before {
+  background-image: url(images/forest_cliff.jpg);
 }
 
 /* Home */
@@ -130,8 +139,13 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Activities */
 table {
-  width: 1000px;
-  margin: 4em auto 0 auto;
+  width: 100%;
+  min-width: 700px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.table-responsive {
+  margin-top: 4em;
 }
 caption {
   caption-side: top;
@@ -151,7 +165,6 @@ tbody {
   text-align: center;
 }
 th,td {
-  width: 225px;
   text-align: center;
   height: 75px;
   vertical-align: middle;
@@ -175,31 +188,8 @@ td.tdhighlight {
   color: #fff;
   font-weight: bold;
 }
-#activities main #displaySelected {
-  visibility: hidden;
-  margin: 0 auto;
-  width: 600px;
-  border: 2px solid #9ed034;
-  padding: 0.75em;
-}
-#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
-  display: inline-block;
-  margin: 0;
-}
-#activities main #result {
-  min-height: 50px;
-  width: 300px;
-  padding: 0;
-}
-#activities main #result h4 {
-  margin-bottom: 1em;
-  font-size: 1.15em;
-}
-#activities main #result p {
+#activities #result p {
   margin-bottom: 0.6em;
-}
-#activities main #displaySelected #sendinfo input[type="email"] {
-  width: 200px;
 }
 
 /* Contact */
@@ -226,42 +216,22 @@ form legend {
 form label {
   font-weight: bold;
 }
-form .textbox label {
-  display: block;
-  margin: 1em 0 0.3em 0;
-}
-form .textbox input {
-  display: block;
-  width: 50%;
-  height: 22px;
-  box-sizing: border-box;
-}
+form .textbox,
 form .radios,
-form .selectmenu {
-  margin-top: 1.5em;
-}
-form .selectmenu select {
-  width: 120px;
-  text-align: center;
-}
-form .commentbox label {
-  display: block;
-  margin: 1.5em 0 0.3em 0;
+form .selectmenu,
+form .commentbox {
+  margin-top: 1em;
 }
 form .commentbox textarea {
-  display: block;
-  width: 50%;
   height: 160px;
   resize: none;
-  box-sizing: border-box;
 }
 form .randomcode {
-  width: 50%;
   margin-top: 1em;
   text-align: right;
 }
 form .randomcode input {
-  width: 150px;
+  max-width: 150px;
   padding: 0.3em;
   vertical-align: middle;
 }
@@ -275,7 +245,6 @@ form .randomcode #codes {
   vertical-align: middle;
 }
 form .button {
-  width: 50%;
   margin-top: 1em;
   text-align: right;
 }
@@ -439,5 +408,36 @@ form .button .btn {
 @media (max-width: 575.98px) {
   #home main h2 {
     font-size: 1.6em;
+  }
+}
+
+/* Large breakpoint and up */
+@media (min-width: 992px) {
+  form .textbox,
+  form .selectmenu,
+  form .commentbox,
+  form .randomcode,
+  form .button {
+    width: 50%;
+  }
+}
+
+/* Medium breakpoint and under */
+@media (max-width: 991.98px) {
+  body::before {
+    height: 300px;
+  }
+  header {
+    min-height: 175px;
+  }
+}
+
+/* Extra small */
+@media (max-width: 575.98px) {
+  body::before {
+    height: 250px;
+  }
+  header {
+    min-height: 125px;
   }
 }
