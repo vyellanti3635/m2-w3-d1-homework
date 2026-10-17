@@ -1,0 +1,443 @@
+/* Header */
+header {
+  width: 100%;
+  min-height: 275px;
+}
+#home {
+  background: no-repeat white url(images/cliff_ocean.jpg);
+  background-size: 100% 400px;
+}
+#activities {
+  background: no-repeat white url(images/runfly.jpg);
+  background-size: 100% 400px;
+}
+#contact {
+  background: no-repeat white url(images/cliff_rock.jpg);
+  background-size: 100% 400px;
+}
+#cliffs {
+  background: no-repeat white url(images/forest_cliff.jpg);
+  background-size: 100% 400px;
+}
+
+/* Home */
+#timeofday {
+  padding: 1.2em 0;
+  background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  text-align: center;
+  color: #3a3a3a;
+}
+#timeofday #clock {
+  color: #125688;
+}
+
+/* Main */
+main {
+  padding: 4em 7% 2em 7%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main h1,
+main h2 {
+  color: #9ed034;
+  font-size: 2em;
+  margin-bottom: 1.2em;
+}
+main h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+}
+main p {
+  font-size: 0.85em;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+}
+
+/* Partners */
+section {
+  width: 100%;
+  background-color: #4288C3;
+}
+section #partners {
+  width: 1200px;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+section #partners .partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+section #partners .partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Activities */
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+caption {
+  caption-side: top;
+  text-align: center;
+  background: #852B1B;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+thead {
+  background: #BDE1FF;
+}
+tbody {
+  background: #EEFFE6;
+  text-align: center;
+}
+th,td {
+  width: 225px;
+  text-align: center;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852B1B;
+}
+th:first-child {
+  width: 125px;
+  height: 50px;
+  background: #4977D1;
+  color: #fff;
+}
+td:first-child {
+  font-weight: bold;
+  background: #BDE1FF;
+}
+td.selectable {
+  cursor: pointer;
+}
+td.tdhighlight {
+  background: #9ed034;
+  color: #fff;
+  font-weight: bold;
+}
+#activities main #displaySelected {
+  visibility: hidden;
+  margin: 0 auto;
+  width: 600px;
+  border: 2px solid #9ed034;
+  padding: 0.75em;
+}
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+  display: inline-block;
+  margin: 0;
+}
+#activities main #result {
+  min-height: 50px;
+  width: 300px;
+  padding: 0;
+}
+#activities main #result h4 {
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+#activities main #result p {
+  margin-bottom: 0.6em;
+}
+#activities main #displaySelected #sendinfo input[type="email"] {
+  width: 200px;
+}
+
+/* Contact */
+.contactinfo {
+  margin-bottom: 1.5em;
+  font-size: 0.85em;
+}
+.contactinfo span:first-child {
+  font-weight: bold;
+}
+form fieldset {
+  border: 1px solid #9ed034;
+  margin: 0;
+  padding: 0.5em 2em 1.5em 2em;
+  font-size: 0.9em;
+}
+form legend {
+  color: #4977D1;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+form label {
+  font-weight: bold;
+}
+form .textbox label {
+  display: block;
+  margin: 1em 0 0.3em 0;
+}
+form .textbox input {
+  display: block;
+  width: 50%;
+  height: 22px;
+  box-sizing: border-box;
+}
+form .radios,
+form .selectmenu {
+  margin-top: 1.5em;
+}
+form .selectmenu select {
+  width: 120px;
+  text-align: center;
+}
+form .commentbox label {
+  display: block;
+  margin: 1.5em 0 0.3em 0;
+}
+form .commentbox textarea {
+  display: block;
+  width: 50%;
+  height: 160px;
+  resize: none;
+  box-sizing: border-box;
+}
+form .randomcode {
+  width: 50%;
+  margin-top: 1em;
+  text-align: right;
+}
+form .randomcode input {
+  width: 150px;
+  padding: 0.3em;
+  vertical-align: middle;
+}
+form .randomcode #codes {
+  display: inline-block;
+  margin: 0 0 0 0.5em;
+  padding: 0.3em 0.8em;
+  background-color: #ddd;
+  font-weight: bold;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+form .button {
+  width: 50%;
+  margin-top: 1em;
+  text-align: right;
+}
+form .button .btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  /*background-color: #4977D1;*/
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Cliffs */
+.cliff-list {
+  margin: 3em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+.cliff-list .cliff {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: 0 1.5% 3em 1.5%;
+  padding-bottom: 1.2em;
+  background-color: #fff;
+  border-bottom: 4px solid #9ed034;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.cliff-list .cliff:hover {
+  transform: translateY(-6px);
+}
+.cliff-list .cliff img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cliff-list .cliff h3 {
+  margin: 1em 0 0.3em 0;
+  color: #4977D1;
+  text-transform: uppercase;
+}
+.cliff-list .cliff span {
+  color: #888;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Home - Responsive (Bootstrap 4) */
+#container .navbar {
+  width: 90%;
+  max-width: 700px;
+  min-height: 100px;
+  margin: 2em auto 0 auto;
+  padding: 0;
+  background-color: rgba(38, 41, 61, 0.7);
+}
+#container .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+#container .navbar-brand img {
+  width: auto;
+  height: 100px;
+}
+#container .navbar-toggler {
+  margin-right: 1.5em;
+}
+#container .navbar-nav .nav-item {
+  border-left: 1px solid rgba(202, 204, 202, 0.6);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#container .navbar-nav .nav-link {
+  padding: 0 25px;
+  line-height: 100px;
+  color: rgb(255, 255, 255);
+}
+#container .navbar-nav .nav-link:hover {
+  color: #9ed034;
+}
+#container .navbar-nav .nav-item.active {
+  background: #9ed034;
+  border: none;
+}
+#container .navbar-nav .nav-item.active .nav-link {
+  color: #fff;
+}
+#home main {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+#home main h3 {
+  line-height: 1.3em;
+}
+#home main .textblock p {
+  margin-bottom: 0;
+}
+#container section #partners {
+  width: auto;
+  margin: 0 -15px;
+  padding: 2em 0;
+  list-style-type: none;
+}
+#container section #partners .partner {
+  display: block;
+  margin: 0;
+  padding: 0.75em 15px;
+  background-color: transparent;
+  border-radius: 0;
+}
+#container section #partners .partner img {
+  padding: 1.2em;
+  background-color: #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+#container footer {
+  height: auto;
+}
+#container footer #nondisclaimer .copy,
+#container footer #nondisclaimer .social {
+  float: none;
+  margin: 0;
+  padding: 2.5em 15px;
+}
+#container footer #nondisclaimer .social .fa {
+  box-sizing: content-box;
+}
+#container footer #disclaimer p {
+  margin-bottom: 0;
+}
+
+/* Large breakpoint and under (navbar is collapsed) */
+@media (max-width: 991.98px) {
+  #container .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    width: 180px;
+    background-color: rgba(38, 41, 61, 0.7);
+  }
+  #container .navbar-nav .nav-item {
+    border-left: none;
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+  }
+  #container .navbar-nav .nav-link {
+    line-height: 60px;
+  }
+  #container footer #nondisclaimer .copy,
+  #container footer #nondisclaimer .social {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+  }
+}
+
+/* Small breakpoint and under */
+@media (max-width: 575.98px) {
+  #home main h2 {
+    font-size: 1.6em;
+  }
+}

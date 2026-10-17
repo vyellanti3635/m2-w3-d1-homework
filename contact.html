@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Great Cliffs</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="contact" onLoad="disableButton(true)">
+
+<!-- Container to wrap everything -->
+<div id="container">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Great Cliffs Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cliffs.html">Cliffs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">Activities</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+    </header> <!-- End Header -->
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contacting Us</h1>
+        <p>
+        You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
+        7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about
+        the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+        </p>
+
+        <div class="contactinfo">
+            <div class="phone">
+                <span>Phone:</span>
+                <span>(800)GCLIFFS</span>
+            </div>
+            <div class="email">
+                <span>Email:</span>
+                <span>info@greatcliffs.com</span>
+            </div>
+        </div>
+
+        <form action="/contact" method="post">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <div class="textbox">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="John Doe">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="johndoe@gmail.com">
+                <label>Phone:</label>
+                <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+
+            <div class="radios">
+                <label>How should we contact you?</label>
+                <input type="radio" name="contact" value="email" checked>Email
+                <input type="radio" name="contact" value="phone">Phone
+            </div>
+
+            <div class="selectmenu">
+                <label>Which Cliff are you inquiring?</label>
+                <select>
+                    <option>West Cliff</option>
+                    <option>North Cliff</option>
+                    <option>East Cliff</option>
+                    <option>South Cliff</option>
+                </select>
+            </div>
+
+            <div class="commentbox">
+                <label>How did you hear about us:</label>
+                <textarea></textarea>
+            </div>
+
+            <!--Random Codes-->
+            <div class="randomcode">
+                <input type="text" name="randomcode" id="codeentered" placeholder="Enter characters">
+                <p id="codes"></p>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> SEND</button>
+            </div>
+        </fieldset>
+        </form>
+    </main> <!-- End Main Content -->
+
+    <!-- Partners -->
+    <section>
+        <div class="container">
+        <ul id="partners" class="row">
+            <!--<li class="partner">
+                <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+            </li>
+            <li class="partner">
+                <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+            </li>
+            <li class="partner">
+                <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+            </li>
+            <li class="partner">
+                <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+            </li>
+            <li class="partner">
+                <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+            </li>
+            <li class="partner">
+                <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+            </li>-->
+        </ul>
+        </div>
+    </section> <!-- End Partners -->
+
+    <!-- Footer Information -->
+    <footer>
+
+        <div id="nondisclaimer" class="container">
+            <div class="row align-items-center">
+            <div class="copy col-lg-6 text-center text-lg-left">&copy; Copyright 2020 :: GreatCliffs.com</div>
+            <div class="social col-lg-6 text-center text-lg-right">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+            </div>
+        </div> <!-- End nondisclaimer -->
+
+        <div id="disclaimer" class="container">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+        </div> <!-- End disclaimer -->
+
+    </footer> <!-- End Footer -->
+
+</div> <!-- End Container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Partners -->
+<script src="js/site_scripts.js"></script>
+
+<!-- Random Codes -->
+<script src="js/randomcodes.js"></script>
+
+</body>
+</html>
